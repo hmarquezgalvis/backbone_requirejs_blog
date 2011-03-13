@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Blog</title>
+        <script data-main="js/main" src="js/require-jquery.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/blog.css"> 
+    </head>
+    <body>
+        <h1>Javascript Blog</h1>
+
+		<div id="blog">
+		</div>
+
+		<script type="text/javascript">
+		require(["blog"], function(app) {
+		    $(document).ready(function(){
+		        app.call($('#blog'),{
+		            keepReadingText: 'Seguir Leyendo...'
+		        });
+		    });
+		});
+		</script>
+    </body>
+</html>
+

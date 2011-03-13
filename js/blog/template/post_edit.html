@@ -1,0 +1,15 @@
+<h3><%= app.options.createPostTitleText %></h3>
+
+<form>
+    <div class="form_row">
+        <label for="post_title"><%= app.options.postTitleLabelText %></label>
+        <input id="post_title" type="text" name="title" size="40"/>
+    </div>
+    <div class="form_row">
+        <label for="post_body"><%= app.options.postBodyLabelText %></label>
+        <textarea id="post_body" name="body" rows="10" cols="50"></textarea>
+    </div>
+    <div class="form_submit_row">
+        <input type="submit" value="<%= app.options.saveButtonText %>"/>
+    </div>
+</form>
